@@ -1,0 +1,24 @@
+#using RequirementsTransformator.*
+#using AttrCondDefLibrary.*
+
+#rule XContainerToContainerRule #with RequirementsTransformator
+
+#source { 
+	++ xContainer : XContainer
+}
+
+#target {
+	++ container : Container
+}
+
+#correspondence {
+	++ xContainerToContainer : XContainerToContainer {
+		#src->xContainer
+		#trg->container
+	}
+}
+
+#attributeConditions {
+	
+}
+
