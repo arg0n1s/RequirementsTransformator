@@ -8,7 +8,11 @@
 }
 
 #target {
-	++ container : Container
+	++ container : Container {
+		++ -networkSpan->virtualNode
+	}
+	
+	++ virtualNode : requirements.NetworkSpan
 }
 
 #correspondence {
